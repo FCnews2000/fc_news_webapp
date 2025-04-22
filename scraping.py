@@ -12,4 +12,4 @@ def get_latest_headline():
         return headline.text.strip() if headline else "Sem manchetes encontradas"
     except:
         return "Erro ao buscar manchete"
- bfbba275a9f813f90eed30fc43624e3c9496eab8
+
