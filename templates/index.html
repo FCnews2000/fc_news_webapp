@@ -1,1 +1,38 @@
+ HEAD
 <!-- HTML com botões de tema e cards -->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>FC News</title>
+</head>
+<body style="background:#111; color:#fff; font-family:Arial; padding:30px;">
+    <img src="{{ url_for('static', filename='logo.png') }}" alt="Logo" width="120">
+    <h1>FC News - Flip Coin News</h1>
+    <form method="post">
+        <button type="submit">🎲 Gerar Notícia</button>
+    </form>
+
+    {% if manchete %}
+    <h2>📰 Manchete:</h2>
+    <p><strong>{{ manchete }}</strong></p>
+
+    <h3>😈 Capetinha:</h3>
+    <p>{{ capetinha }}</p>
+
+    <h3>😇 Anjinho:</h3>
+    <p>{{ anjinho }}</p>
+
+    <form method="post" action="/export">
+        <input type="hidden" name="manchete" value="{{ manchete }}">
+        <input type="hidden" name="capetinha" value="{{ capetinha }}">
+        <input type="hidden" name="anjinho" value="{{ anjinho }}">
+        <button type="submit">📸 Exportar como imagem</button>
+    </form>
+    {% endif %}
+
+    <br><a href="/logout" style="color:#ccc;">Sair</a>
+</body>
+</html>
+ bfbba275a9f813f90eed30fc43624e3c9496eab8
