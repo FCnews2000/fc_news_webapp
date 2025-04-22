@@ -1,0 +1,1 @@
+# trends.py com integração ao Google Trends

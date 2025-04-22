@@ -1,0 +1,1 @@
+# app.py com rotas atualizadas

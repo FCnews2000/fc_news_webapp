@@ -1,0 +1,1 @@
+# scraping.py com scraping dos 7 sites
