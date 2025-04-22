@@ -1,0 +1,6 @@
+git init
+git add .
+git commit -m "primeiro commit"
+git branch -M main
+git remote add origin https://github.com/FCnews2000/fc_news_webapp.git
+git push -u origin main
