@@ -48,12 +48,12 @@ def export():
     font = ImageFont.truetype(font_path, 24)
 
     draw.text((20, 30), "🪙 FC News", fill="white", font=font)
-    draw.text((20, 80), f"📰 Manchete:
-{manchete}", fill="white", font=font)
-    draw.text((20, 220), f"😈 Capetinha:
-{capetinha}", fill="red", font=font)
-    draw.text((20, 400), f"😇 Anjinho:
-{anjinho}", fill="lightblue", font=font)
+    draw.text((20, 80), "📰 Manchete:", fill="white", font=font)
+    draw.text((20, 120), manchete, fill="white", font=font)
+    draw.text((20, 180), "😈 Capetinha:", fill="red", font=font)
+    draw.text((20, 220), capetinha, fill="red", font=font)
+    draw.text((20, 280), "😇 Anjinho:", fill="lightblue", font=font)
+    draw.text((20, 320), anjinho, fill="lightblue", font=font)
 
     path = os.path.join("static", "fcnews_export.png")
     image.save(path)
