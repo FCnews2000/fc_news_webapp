@@ -1,4 +1,3 @@
-HEAD
 # app.py com rotas atualizadas
 
 
