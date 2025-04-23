@@ -6,4 +6,3 @@ flask
 requests
 beautifulsoup4
 pillow
- bfbba275a9f813f90eed30fc43624e3c9496eab8
